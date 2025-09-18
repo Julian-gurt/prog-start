@@ -1,0 +1,26 @@
+body{
+    background-color: rgb(39, 38, 38);
+      font-family: Arial, sans-serif;
+      text-align: center;
+      color: white;
+}
+
+.container:hover{transform: translateY(8px)}
+
+
+.container{
+    background-color: rgb(202, 42, 42);
+    width: 80vw;
+    margin: 0 auto;
+    height: 40vh;
+    border: 3px solid white;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 900px) {
+    .container {
+        background-color: rgb(40, 205, 134);
+    }
+}
