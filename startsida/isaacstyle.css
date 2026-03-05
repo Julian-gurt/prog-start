@@ -1,0 +1,111 @@
+body{
+    background-image: url(isaacroom.png);
+    background-size: 2300px;
+    background-repeat: 2;   
+    background-position: center; 
+    background-repeat: repeat; 
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    border:black;
+    border-radius: 3px;
+    max-height: 75px;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    
+}
+
+
+.hero-image {
+flex: 1;
+text-align: center;
+min-width: 280px;
+}
+
+
+.hero-image img {
+max-width: 320px;
+width: 100%;
+border-radius: 12px;
+border: 3px solid var(--accent);
+box-shadow: 0 0 25px rgba(0,0,0,0.6);
+transition: transform 0.4s ease;
+}
+
+.hero-image img:hover {
+transform: scale(1.05);
+}
+
+
+
+.content-section {
+padding: 60px 10%;
+}
+
+
+.content-section h2 {
+margin-bottom: 30px;
+font-size: 1.8rem;
+border-left: 4px solid var(--accent);
+padding-left: 12px;
+}
+
+
+
+.card-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+gap: 25px;
+}
+
+
+.card {
+background: var(--panel);
+padding: 25px;
+border-radius: 10px;
+border: 1px solid #2a2a2f;
+transition: 0.3s ease;
+}
+
+
+.card:hover {
+border-color: var(--accent);
+transform: translateY(-6px);
+}
+
+
+.card h3 {
+margin-top: 0;
+margin-bottom: 10px;
+}
+
+
+.card p {
+color: var(--muted);
+}
+
+
+
+footer {
+text-align: center;
+padding: 30px;
+border-top: 2px solid var(--accent);
+background: #141418;
+color: var(--muted);
+font-size: 0.9rem;
+}
+
+
+
+@media (max-width: 768px) {
+.hero {
+padding: 60px 6%;
+}
+
+
+.content-section {
+padding: 50px 6%;
+}
+}

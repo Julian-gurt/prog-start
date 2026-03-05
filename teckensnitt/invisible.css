@@ -1,0 +1,8 @@
+@font-face {
+    font-family: sigma;
+    src: url(neger.ttf);
+}
+
+.h1{
+    font-family: sigma;
+}

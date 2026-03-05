@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  background-image: url(cassettes.png);
+}
+
+
+.segment {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 60px 10%;
+  align-items: center;
+}
+
+
+.text {
+  background: rgb(132, 123, 77);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+
+.segment h2 {
+  font-size: 2rem;
+  color: #ff0000;
+  text-shadow: 0 4px 10px;
+}
+
+
+.segment.large {
+  grid-template-columns: 1fr;
+  padding: 80px 20%;
+}
+
+.segment.large .text {
+  font-size: 1.2rem;
+}
+
+
+.segment.left .text {
+  grid-column: 1;
+}
+
+.segment.left h2 {
+  grid-column: 2;
+  text-align: center;
+}
+
+
+.segment.right .text {
+  grid-column: 2;
+}
+
+.segment.right h2 {
+  grid-column: 1;
+  text-align: center;
+}
+

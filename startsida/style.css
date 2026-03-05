@@ -11,7 +11,7 @@ body {
   display: flex;
   flex-direction: column;
 
- /* bakgrund */
+
   background-image: url("unicorn.jpg"); 
   background-size: cover;   
   background-position: center; 
@@ -52,7 +52,7 @@ header h1 {
   color: inherit;
 }
 
-/* Box styling */
+
 .box {
   border: 3px solid rgb(40, 205, 134);
   border-radius: 4px;  
@@ -66,13 +66,13 @@ header h1 {
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-/* Hover effect */
+
 .box:hover {
   background-color: rgba(255, 255, 255, 0.3);
   transform: translateY(-8px);
 }
 
-/* Text inside box */
+
 .box h1 {
   margin: 0 0 10px;
   font-size: 1.4rem;
