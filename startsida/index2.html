@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silent Hill 2  Fan Portal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="shstyle.css">
+</head>
+<body>
+
+<canvas id="fogCanvas"></canvas>
+<div class="scanlines"></div>
+<div class="vignette"></div>
+
+<div id="app">
+    <header>
+        <div class="logo">Silent Hill II</div>
+        <nav class="tabs">
+            <button class="tab-btn active" data-tab="home">Home</button>
+            <button class="tab-btn" data-tab="lore">Lore</button>
+            <button class="tab-btn" data-tab="locations">Locations</button>
+            <button class="tab-btn" data-tab="bestiary">Bestiary</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="tab-panel active" id="tab-home">
+            <div class="panel-wrap home-hero">
+                <h1 class="hero-text">Silent Hill</h1>
+                <p class="subtitle">"In my restless dreams, I see that town..."</p>
+            </div>
+        </section>
+
+        <section class="tab-panel" id="tab-lore">
+            <div class="panel-wrap">
+                <h2 class="sec-h">The Archives</h2>
+
+                <div class="lore-block">
+                    <div class="lore-header">
+                        <span class="file-id">DOC_001</span>
+                        <span class="file-date">NOV 199X</span>
+                    </div>
+                    <div class="lore-content">
+                        <h3>The Descent into Fog</h3>
+                        <p>The fog in Silent Hill is not a natural phenomenon. It acts as a veil between the "Real World" and the "Otherworld." For James, the fog represents his own clouded memory and his refusal to face the truth.</p>
+                        <blockquote class="game-quote">"It's not just the fog. There's something else... something shifting inside it."</blockquote>
+                    </div>
+                </div>
+
+                <div class="lore-block">
+                    <div class="lore-header">
+                        <span class="file-id">DOC_042</span>
+                    </div>
+                    <div class="lore-content">
+                        <h3>The Otherworld</h3>
+                        <p>When the siren wails, the world shifts. The Otherworld is a physical manifestation of a person's inner psyche. James's Otherworld is filled with rust and water, symbolizing the long years Mary spent in a decaying hospital bed.</p>
+                    </div>
+                </div>
+
+                <div class="lore-block">
+                    <div class="lore-header">
+                        <span class="file-id">DOC_013</span>
+                        <span class="file-date">MAR 199X</span>
+                    </div>
+                    <div class="lore-content">
+                        <h3>The Manifestation of Guilt</h3>
+                        <p>The creatures roaming the streets are not generic monsters; they are externalized projections of James's subconscious desires and self-loathing. The Lying Figures, trapped in fleshy, straitjacket-like skin, represent the agonizing confinement of Mary’s illness, as well as James's own feeling of being trapped by her condition.</p>
+                        <blockquote class="game-quote">"They look like monsters to you?"</blockquote>
+                    </div>
+                </div>
+
+                <div class="lore-block">
+                    <div class="lore-header">
+                        <span class="file-id">DOC_088</span>
+                    </div>
+                    <div class="lore-content">
+                        <h3>The Executioner's Purpose</h3>
+                        <p>Pyramid Head (The Red Pyramid Thing) exists purely because James *needs* him to exist. Born from James's distorted memories of a historical executioner painting at the Silent Hill Historical Society, this entity acts as an unstoppable punisher. Its sole purpose is to constantly remind James of his sins and force him out of his delusions, repeatedly executing Maria to break James's cycle of denial.</p>
+                        <blockquote class="game-quote">"I was weak. That's why I needed you... needed someone to punish me for my sins."</blockquote>
+                    </div>
+                </div>
+
+                <div class="lore-block">
+                    <div class="lore-header">
+                        <span class="file-id">DOC_104</span>
+                        <span class="file-date">MAY 199X</span>
+                    </div>
+                    <div class="lore-content">
+                        <h3>The Delusion of Maria</h3>
+                        <p>Maria is an artificial construct generated by the town from James's conflicting desires. She possesses the face and voice of Mary, but dresses provocatively and behaves with a flirtatious energy that Mary lacked during her final years. She is the idealized, compliant fantasy James wished for, yet her constant "deaths" serve as a cruel mechanism of the town to force him to relive the trauma of losing his wife.</p>
+                    </div>
+                </div>
+
+                <div class="lore-block">
+                    <div class="lore-header">
+                        <span class="file-id">DOC_213</span>
+                    </div>
+                    <div class="lore-content">
+                        <h3>Overlapping Realities</h3>
+                        <p>Silent Hill does not treat every visitor the same. The town hosts overlapping, subjective realities running parallel to one another. While James navigates a world of rust, water, and sexualized rot, Angela encounters a world perpetually ablaze with fire, reflecting the horrific domestic abuse of her past. Laura, an innocent child carrying no guilt, sees a completely normal, empty resort town with no monsters at all.</p>
+                        <blockquote class="game-quote">"For me, it's always like this."</blockquote>
+                    </div>
+                </div>
+
+                <div class="lore-block">
+                    <div class="lore-header">
+                        <span class="file-id">DOC_024</span>
+                        <span class="file-date">JUL 199X</span>
+                    </div>
+                    <div class="lore-content">
+                        <h3>The Mandorla of Brookhaven</h3>
+                        <p>The hospital acts as a nexus point where the town’s spiritual power is heavily concentrated. For James, Brookhaven Hospital is a direct echo of the sterile environments where Mary spent her final days. The heavy smell of antiseptic, the claustrophobic corridors, and the terrifying, twitching nurses are born from his deeply suppressed resentment toward the medical system that failed to save her.</p>
+                        <blockquote class="game-quote">"This place... it feels like it's trying to swallow me whole."</blockquote>
+                    </div>
+                </div>
+
+                <div class="lore-block">
+                    <div class="lore-header">
+                        <span class="file-id">DOC_057</span>
+                    </div>
+                    <div class="lore-content">
+                        <h3>The Weight of the Great Knife</h3>
+                        <p>The massive weapon dragged by the Red Pyramid Thing is symbolical of the immense psychological burden James carries. When James eventually equips the Great Knife himself, his movement becomes slow, sluggish, and painfully encumbered. The town physically forces him to feel the exhausting, crushing weight of the guilt he has been running away from.</p>
+                    </div>
+                </div>
+
+                <div class="lore-block">
+                    <div class="lore-header">
+                        <span class="file-id">DOC_119</span>
+                        <span class="file-date">OCT 199X</span>
+                    </div>
+                    <div class="lore-content">
+                        <h3>Eddie's Descent into Malice</h3>
+                        <p>Unlike James, who is trapped in a loop of grief and denial, Eddie Dombrowski represents the explosion of repressed anger. Driven mad by a lifetime of mockery and bullying, Eddie's version of Silent Hill manifests as a freezing cold meat locker filled with decaying carcasses and mocking laughters. The town gives Eddie the power to finally strike back, transforming his victimhood into homicidal arrogance.</p>
+                        <blockquote class="game-quote">"Killing a person ain't no big deal. Just put the gun to their head... pow."</blockquote>
+                    </div>
+                </div>
+
+                <div class="lore-block">
+                    <div class="lore-header">
+                        <span class="file-id">DOC_302</span>
+                    </div>
+                    <div class="lore-content">
+                        <h3>The Symbolic Depths of Lake Toluca</h3>
+                        <p>Water in Silent Hill 2 represents stagnation, death, and the subconscious mind. James's journey across Lake Toluca to the Lakeview Hotel is a metaphorical row into the deepest, darkest recesses of his own memory. The hotel—the "special place" where he and Mary spent happy times—is frozen in his mind, but beneath the surface lies the truth of the videotape, waiting to be unearthed.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="tab-panel" id="tab-locations">
+            <div class="panel-wrap">
+                <h2 class="sec-h">Geographic Data</h2>
+                <div id="locList"></div>
+            </div>
+        </section>
+
+        <section class="tab-panel" id="tab-bestiary">
+            <div class="inv-shell">
+                <div class="inv-hud">CREATURE REGISTRY <span id="hudCount" style="margin-left: auto;">0 / 0 EXAMINED</span></div>
+                <div class="inv-body">
+                    <div class="inv-left"><div class="inv-grid" id="invGrid"></div></div>
+                    <div class="inv-right" id="invDetail">
+                        <div class="inv-empty">SELECT SPECIMEN FOR ANALYSIS</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
